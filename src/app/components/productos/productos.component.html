@@ -1,0 +1,15 @@
+<main id="productos">
+  <h1>Lista de productos</h1>
+  <div class="container">
+    <app-mostrar-productos
+      [productos]="productos"
+      [productosSeleccionados]="productosSeleccionados"
+      [total]="total"
+    ></app-mostrar-productos>
+    <app-confirmar-compra
+      [productos]="productos"
+      [productosSeleccionados]="productosSeleccionados"
+      [total]="total"
+    ></app-confirmar-compra>
+  </div>
+</main>

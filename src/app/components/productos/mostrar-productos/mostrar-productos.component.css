@@ -1,0 +1,37 @@
+#mostrar_productos {
+  padding-bottom: 40px;
+}
+
+#mostrar_productos .btn {
+  background: #e83c3c;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+#mostrar_productos .btn:hover {
+  background: #8d0c0c;
+}
+
+#mostrar_productos .card {
+  display: inline-block;
+  margin: 20px 20px 20px 0px;
+  width: 20rem;
+}
+
+#mostrar_productos .card-img-top {
+  height: 17rem;
+}
+
+#mostrar_productos .card:last-child {
+  margin-right: 0px;
+}
+
+#mostrar_productos .alert {
+  text-transform: uppercase;
+}
+
+#mostrar_productos small {
+  color: red;
+  text-transform: uppercase;
+  font-style: oblique;
+}

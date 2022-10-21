@@ -1,0 +1,9 @@
+#productos {
+  min-height: 100vh;
+  background: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+}
+#productos h1 {
+  padding: 20px 0 20px;
+}

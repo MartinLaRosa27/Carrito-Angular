@@ -1,0 +1,35 @@
+<div id="mostrar_productos" class="text-center">
+  <div *ngIf="productos.length > 0">
+    <article *ngFor="let producto of productos" class="card">
+      <img
+        [src]="producto.img"
+        class="card-img-top"
+        [alt]="producto.nombre"
+        [title]="producto.nombre"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ producto.nombre }}</h5>
+        <p class="card-text">
+          {{ producto.precio | currency: "ARS" }}
+          <small *ngIf="producto.stock == 1"> Ultimo en stock </small>
+        </p>
+        <p
+          *ngIf="producto.stock > 0"
+          class="btn btn-primary"
+          (click)="agregarProducto(producto)"
+        >
+          Agregar
+        </p>
+        <p *ngIf="producto.stock == 0" class="btn btn-primary disabled">
+          Sin Stock
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div *ngIf="productos.length <= 0">
+    <div class="alert alert-danger" role="alert">
+      No se encontraron productos :(
+    </div>
+  </div>
+</div>

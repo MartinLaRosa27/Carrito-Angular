@@ -1,0 +1,17 @@
+#confirmar_compra {
+  padding-bottom: 40px;
+}
+
+#confirmar_compra span {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#confirmar_compra span:hover {
+  color: red;
+}
+
+#confirmar_compra button {
+  margin-top: 14px;
+  text-transform: uppercase;
+}

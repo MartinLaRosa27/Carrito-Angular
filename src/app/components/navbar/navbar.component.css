@@ -1,0 +1,20 @@
+#navbar {
+  background: #e83c3c !important;
+  text-transform: uppercase;
+}
+
+#navbar a {
+  color: white;
+  transition: 0.5s;
+}
+
+#navbar a:hover {
+  color: #afafaf;
+}
+
+#navbar button {
+  color: white !important;
+  background-color: #eaeaea;
+  box-shadow: none;
+  border: 2px solid black;
+}

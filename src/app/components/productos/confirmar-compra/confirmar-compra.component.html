@@ -1,0 +1,27 @@
+<div id="confirmar_compra">
+  <h3>
+    Mis compras <span class="material-symbols-outlined"> shopping_cart </span>
+  </h3>
+  <ul *ngIf="productosSeleccionados.length > 0" class="list-group">
+    <li
+      *ngFor="let producto of productosSeleccionados"
+      class="list-group-item d-flex justify-content-between align-items-center"
+    >
+      {{ producto.nombre }} | {{ producto.precio | currency: "ARS" }}
+      <span
+        class="material-symbols-outlined"
+        (click)="eliminarProducto(producto)"
+      >
+        cancel
+      </span>
+    </li>
+    <button type="button" class="btn btn-success" (click)="confirmarCompra()">
+      Confirmar Compra
+    </button>
+  </ul>
+  <div *ngIf="productosSeleccionados.length == 0" class="text-center">
+    <div class="alert alert-warning" role="alert">
+      Agrega prodcutos a tu carrito de compras
+    </div>
+  </div>
+</div>
